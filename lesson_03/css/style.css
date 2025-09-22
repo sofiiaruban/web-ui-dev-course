@@ -1,0 +1,61 @@
+@import url('reset.css');
+
+* {
+  font-size: 14px;
+  color: #000401;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 28px;
+}
+.bold {
+  font-weight: 700;
+}
+
+[class='menu-item'] {
+  font-weight: 600;
+  font-size: 18px;
+  color: #222222;
+}
+
+[class|='blue-part'] {
+  color: #055ebd;
+}
+
+[class^='yellow'] {
+  color: #ffd502;
+}
+
+[title~='source'] {
+  color: #000035;
+}
+[class$='subtitle'] {
+  font-size: 20px;
+  color: #191949;
+}
+[class*='link'] {
+  color: #9c29c1;
+}
+#main-heading > span {
+  font-size: 32px;
+  line-height: 2;
+}
+.bold.title {
+  color: #2e0c39;
+}
+.history-section p {
+  color: #9f2b68;
+}
+.history-section + .geography-section h2,
+.history-section + .geography-section p {
+  color: #de3163;
+}
+
+.geography-section ~ .culture-section h2,
+.geography-section ~ .culture-section p {
+  color: #970a37;
+}
+
+.cuisine-img {
+  width: 500px;
+}
