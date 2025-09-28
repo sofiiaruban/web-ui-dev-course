@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  font-family: 'KaushanScript';
+  src: url('../font/KaushanScript-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KaushanScript';
+  src: url('../font/KaushanScript-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KaushanScript';
+  src: url('../font/KaushanScript-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 16px;
+}
+.footer {
+  font-family: 'KaushanScript', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5;
+}
+h1 {
+  font-family: 'KaushanScript', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+h2 {
+  font-family: 'KaushanScript', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.serif-font {
+  font-family: 'Montserrat', 'Arial', serif;
+}
+.cursive-font {
+  font-family: 'Cedarville Cursive', 'Arial', cursive;
+}
+.monospace-font {
+  font-family: 'Space Mono', 'Arial', monospace;
+}
+.normal-font-style {
+  font-style: normal;
+}
+.italic-font-style {
+  font-style: italic;
+}
+.oblique-font-style {
+  font-style: oblique;
+}
+.thin {
+  font-weight: 100;
+}
+.extra-light {
+  font-weight: 200;
+}
+.light {
+  font-weight: 300;
+}
+.normal {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.extra-bold {
+  font-weight: 800;
+}
+.black {
+  font-weight: 900;
+}
+.extra-black {
+  font-weight: 950;
+}
+.word-color {
+  color: blue;
+}
+.hex-color {
+  color: #ff5733;
+}
+.rgba-color {
+  color: rgba(34, 139, 34, 0.5);
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.justify {
+  text-align: justify;
+}
+.underline {
+  text-decoration-line: underline;
+}
+.line-through {
+  text-decoration-line: line-through;
+}
+.overline {
+  text-decoration-line: overline;
+}
+.thickness {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+.offset {
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+.single-shadow {
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+.multi-shadow {
+  text-shadow: 1px 1px 2px #ff0000, -3px 2px 5px rgba(0, 0, 255, 0.5);
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.line-height {
+  font-size: 20px;
+  line-height: 2;
+}
+.letter-spacing {
+  letter-spacing: 1.5;
+}
+.white-space {
+  white-space: nowrap;
+}
+.word-spacing {
+  word-spacing: 20px;
+}
