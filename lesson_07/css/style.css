@@ -1,0 +1,205 @@
+@import url('reset.css');
+body {
+  padding: 20px 30px;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.nav-menu {
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.menu-item {
+  margin-bottom: 10px;
+}
+.box {
+  display: inline-block;
+  width: 200px;
+  padding: 15px;
+  background-color: #e9e6e6;
+  border: 2px solid #1b0f0f;
+  margin-right: 15px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.section {
+  margin-bottom: 30px;
+}
+
+.pseudo-classes-link {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.pseudo-classes-link:hover {
+  color: #5e155e9e;
+}
+.pseudo-classes-link:active {
+  color: rgb(231, 128, 128);
+}
+.pseudo-classes-link:focus {
+  color: rgb(137, 128, 231);
+}
+.pseudo-classes-link:visited {
+  color: rgb(147, 231, 128);
+}
+
+.pseudo-class-type p:first-of-type {
+  color: #d62828;
+}
+
+.pseudo-class-type p:last-of-type {
+  color: #003049;
+}
+.pseudo-class-child p:first-child {
+  color: #f77f00;
+}
+
+.pseudo-class-child p:last-child {
+  color: #eae2b7;
+}
+.pseudo-class-nth-child p:nth-child(odd) {
+  color: #77608d;
+}
+.pseudo-class-nth-child p:nth-child(even) {
+  color: #8d8c60;
+}
+.pseudo-classes p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.pseudo-class-has:has(p) {
+  text-transform: uppercase;
+}
+.pseudo-class-has p:has(span) {
+  color: #4b0082;
+  font-weight: bold;
+}
+.pseudo-el::after {
+  content: '★';
+  padding-left: 10px;
+}
+
+.pseudo-el::before {
+  content: '✪';
+  padding-right: 10px;
+}
+
+.game-wrapper {
+  max-width: 460px;
+  background: url('../img/sky-pattern.jpg');
+  padding: 20px 35px;
+}
+
+.block-1 {
+  width: 20px;
+  height: 120px;
+  margin-left: 20px;
+  background-color: #77608d;
+}
+.block-2 {
+  width: 120px;
+  height: 20px;
+  margin-left: 20px;
+  background-color: #77608d;
+}
+.block-3 {
+  width: 20px;
+  height: 120px;
+  margin-top: -20px;
+  margin-left: 140px;
+  background-color: #77608d;
+}
+.block-4 {
+  width: 120px;
+  height: 20px;
+  margin-left: 140px;
+  background-color: #77608d;
+}
+.block-5 {
+  width: 20px;
+  height: 120px;
+  margin-top: -20px;
+  margin-left: 250px;
+  background-color: #77608d;
+}
+.block-6 {
+  width: 120px;
+  height: 20px;
+  margin-left: 250px;
+  background-color: #77608d;
+}
+.block-7 {
+  width: 20px;
+  height: 120px;
+  margin-top: -20px;
+  margin-left: 350px;
+  background-color: #77608d;
+}
+[class*='block-'] {
+  visibility: hidden;
+}
+.start:hover + .block-1,
+.block-1:hover {
+  visibility: visible;
+}
+
+.block-1:hover + .block-2,
+.block-2:hover {
+  visibility: visible;
+}
+
+.block-2:hover + .block-3,
+.block-3:hover {
+  visibility: visible;
+}
+
+.block-3:hover + .block-4,
+.block-4:hover {
+  visibility: visible;
+}
+
+.block-4:hover + .block-5,
+.block-5:hover {
+  visibility: visible;
+}
+
+.block-5:hover + .block-6,
+.block-6:hover {
+  visibility: visible;
+}
+
+.block-6:hover + .block-7,
+.block-7:hover {
+  visibility: visible;
+}
+.finish {
+  text-align: end;
+}
+.game-title {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px 0;
+}
+.item {
+  margin-bottom: 10px;
+  line-height: 32px;
+}
+.item::before {
+  content: url('../img/check-badge.svg');
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.item:last-of-type {
+  margin-bottom: 0;
+}
