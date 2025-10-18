@@ -1,10 +1,9 @@
 @import url('reset.css');
 body {
-  padding: 20px 30px;
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25px;
 }
 .nav-menu {
   padding-top: 20px;
@@ -62,6 +61,11 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
 }
+.container {
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
 .section {
   margin-bottom: 30px;
 }
@@ -174,9 +178,8 @@ body {
 }
 
 .furniture-hero {
-  background: url('../img/furniture-hero.jpg') center / cover no-repeat;
+  background: url('../img/furniture-hero.jpg') left center / cover no-repeat;
   color: #2f302c;
-  max-width: 1920px;
   padding: 110px 10px;
 }
 .furniture-content {
@@ -193,6 +196,8 @@ body {
 }
 .furniture-title-strong {
   font-weight: 700;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 .furniture-subtitle {
   font-family: 'Lato', Arial, sans-serif;
@@ -207,11 +212,13 @@ body {
   height: 1px;
   border: none;
   background-color: #2f302c;
-  margin: 16px 0 36px;
+  margin: 0 0 36px;
 }
 .furniture-text {
   color: #7e7f7c;
+  font-weight: 500;
   max-width: 375px;
+  line-height: 1.25;
 }
 .item {
   background: url('../img/check-badge.svg') 0 0 no-repeat;
