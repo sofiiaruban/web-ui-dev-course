@@ -2,8 +2,7 @@
 body {
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
 }
 .container {
   max-width: 1392px;
@@ -149,38 +148,8 @@ body {
 [class*='block-'] {
   visibility: hidden;
 }
-.start:hover + .block-1,
-.block-1:hover {
-  visibility: visible;
-}
-
-.block-1:hover + .block-2,
-.block-2:hover {
-  visibility: visible;
-}
-
-.block-2:hover + .block-3,
-.block-3:hover {
-  visibility: visible;
-}
-
-.block-3:hover + .block-4,
-.block-4:hover {
-  visibility: visible;
-}
-
-.block-4:hover + .block-5,
-.block-5:hover {
-  visibility: visible;
-}
-
-.block-5:hover + .block-6,
-.block-6:hover {
-  visibility: visible;
-}
-
-.block-6:hover + .block-7,
-.block-7:hover {
+[class*='block-']:hover + div,
+[class*='block-']:hover {
   visibility: visible;
 }
 .finish {
@@ -190,6 +159,10 @@ body {
   font-weight: 700;
   font-size: 24px;
   padding: 10px 0;
+}
+.items-list {
+  list-style-type: disc;
+  list-style-position: inside;
 }
 .item {
   margin-bottom: 10px;

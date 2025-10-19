@@ -7,12 +7,131 @@
     <title>Lesson 08</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <img class="logo" src="img/logo.svg" alt="logo" /><span>Vector, SVG</span>
-      </div>
-    </header>
-    <main></main>
-    <footer></footer>
+    <div class="page-wrapper">
+      <header>
+        <div class="container">
+          <img class="logo" src="img/logo.svg" alt="logo" />
+          <span> Vector, SVG</span>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="yoga-intro-container">
+            <div class="yoga-intro-text">
+              <h1 class="title">
+                Content, bitmap, JPG 1x, JPG 2x, JPG 3x, ~ AVIF 1x, AVIF 2x,
+                AVIF 3x
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                cupiditate ad nisi deserunt id sint corporis consequatur quo
+                pariatur, amet optio facilis beatae quis. Molestiae autem
+                dolorum magnam error voluptatibus.
+              </p>
+              <img
+                class="yoga-intro-text-img"
+                src="img/circle.svg"
+                alt="circle"
+              />
+              <span>Vector, SVG</span>
+              <img src="img/right-arrow.svg" alt="arrow right" />
+            </div>
+            <div class="yoga-intro-image">
+              <picture>
+                <source
+                  srcset="
+                    img/pigeon-pose.avif    1x,
+                    img/pigeon-pose-2x.avif 2x,
+                    img/pigeon-pose-3x.avif 3x
+                  "
+                />
+                <img
+                  src="img/pigeon-pose.avif"
+                  alt="Woman in beige activewear performs a pigeon pose with a backbend and arm stretch on a light floor in a bright room."
+                />
+              </picture>
+            </div>
+            <div class="yoga-online-image">
+              <picture>
+                <source
+                  srcset="
+                    img/lotus-pose.png    1x,
+                    img/lotus-pose-2x.png 2x,
+                    img/lotus-pose-3x.png 3x
+                  "
+                />
+                <img
+                  src="img/lotus-pose.png"
+                  alt="A young woman in beige activewear sits cross-legged on the floor in a yoga pose, eyes closed and hands resting on her knees, meditating in a bright, minimalist room"
+                />
+              </picture>
+            </div>
+            <div class="yoga-online-text">
+              <h1 class="subtitle">Content, bitmap, PNG 1x, PNG 2x, PNG 3x</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                cupiditate ad nisi deserunt id sint corporis consequatur quo
+                pariatur, amet optio facilis beatae quis. Molestiae autem
+                dolorum magnam error voluptatibus.
+              </p>
+            </div>
+          </div>
+          <div class="gallery">
+            <h2 class="subtitle">Content, bitmap, PNG 1x, PNG 2x, PNG 3x</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at
+              voluptatem veniam modi, ratione culpa iste repellat, accusantium
+              sint, quae quo velit minima fugiat ut veritatis nobis praesentium
+              vel cum!
+            </p>
+            <div class="galley-images">
+              <picture>
+                <source
+                  srcset="
+                    img/yoga-for-beginner.png    1x,
+                    img/yoga-for-beginner-2x.png 2x,
+                    img/yoga-for-beginner-3x.png 3x
+                  "
+                />
+                <img
+                  class="img-1"
+                  src="img/yoga-for-beginner.png"
+                  alt="A woman practicing yoga poses in a serene indoor space, surrounded by soft lighting and minimal decor"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    img/regular-practice.png    1x,
+                    img/regular-practice-2x.png 2x,
+                    img/regular-practice-3x.png 3x
+                  "
+                />
+                <img
+                  class="img-2"
+                  src="img/regular-practice.png"
+                  alt="A woman performs a yoga pose with her arms raised, showcasing balance and tranquility in a serene environment"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="
+                    img/individual-practice.png    1x,
+                    img/individual-practice-2x.png 2x,
+                    img/individual-practice-3x.png 3x
+                  "
+                />
+                <img
+                  class="img-3"
+                  src="img/individual-practice.png"
+                  alt="A woman practicing yoga poses in a serene indoor space, surrounded by soft lighting and minimal decor"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer><p>2023 ©Shanti Yoga Studio. All Rights Reserved.</p></footer>
+    </div>
   </body>
 </html>

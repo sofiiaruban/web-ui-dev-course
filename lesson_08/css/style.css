@@ -2,10 +2,105 @@
 body {
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
+}
+.page-wrapper {
+  max-width: 1600px;
+  padding: 75px 200px 0;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-image: url('../img/bg-flower-right.png'),
+    url('../img/bg-flower-left.png');
+  background-position: right top, left center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1174px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.subtitle {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .logo img {
   width: 125px;
+}
+.yoga-intro-container {
+  font-size: 0;
+  margin: 0 -13px 30px;
+}
+
+.yoga-intro-text,
+.yoga-intro-image,
+.yoga-online-image,
+.yoga-online-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 13px;
+  width: 50%;
+}
+.yoga-intro-text {
+  width: 60%;
+}
+.yoga-intro-image {
+  width: 40%;
+}
+
+.yoga-intro-text,
+.yoga-intro-image {
+  margin-bottom: 40px;
+}
+.yoga-intro-text,
+.yoga-online-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.yoga-intro-text p,
+.yoga-online-text p,
+.gallery p {
+  margin-bottom: 15px;
+}
+.yoga-intro-image {
+  max-width: 468px;
+}
+.yoga-online-image {
+  max-width: 600px;
+}
+.galley-images {
+  font-size: 0;
+  margin: 0 -13px;
+}
+
+.galley-images picture {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  padding: 13px;
+  box-sizing: border-box;
+}
+
+.galley-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.galley-images .img-1 {
+  max-width: 385px;
+}
+
+.galley-images .img-2 {
+  max-width: 368px;
+}
+
+.galley-images .img-3 {
+  max-width: 362px;
 }
