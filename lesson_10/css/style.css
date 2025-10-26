@@ -1,0 +1,133 @@
+@import url('reset.css');
+body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  line-height: 1.25;
+}
+[class$='__container'] {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+.header__nav-list {
+  padding: 20px 0;
+  margin: 0 20px;
+}
+.header__nav-item {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
+.header__nav-link,
+.header__submenu-link {
+  cursor: pointer;
+}
+.header__submenu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__nav-item:hover > .header__submenu-list {
+  display: block;
+}
+
+.header__submenu-item {
+  padding: 8px 16px;
+}
+
+.header__submenu-item:hover {
+  background-color: #f0f0f0;
+}
+.main__feature-item {
+  position: relative;
+  min-height: 30px;
+  padding-left: 40px;
+  line-height: 1.2;
+}
+.main__feature-item::before {
+  content: url('../img/check-badge.svg');
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -8px;
+  left: 0;
+}
+.main__feature-item--grey::before {
+  content: url('../img/grey-check-badge.svg');
+}
+.main__feature-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.gallery {
+  font-family: 'Playfair Display', serif;
+}
+.gallery__container {
+  max-width: 1000px;
+}
+.gallery__title {
+  font-size: 20px;
+  line-height: 1.35;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.gallery__items {
+  margin: 0 -62px 77px;
+}
+
+.gallery__item {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding: 0 62px;
+  width: 33%;
+  color: #fff;
+}
+
+.gallery__image {
+  width: 250px;
+  object-fit: cover;
+}
+
+.gallery__caption {
+  font-size: 28px;
+  width: 150px;
+  line-height: 1.32;
+  position: absolute;
+  text-align: center;
+  left: 30%;
+  top: 40%;
+}
+
+.gallery__more {
+  font-size: 17px;
+  line-height: 1.35;
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  left: 45%;
+}
+
+.gallery__more:hover {
+  color: #000;
+}
+
+.gallery__button {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 10px 50px;
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+}
+.gallery__button:hover {
+  background-color: #efefef;
+}

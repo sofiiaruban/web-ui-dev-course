@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 10</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a
+              class="header__nav-link"
+              href="https://www.google.com"
+              target="_blank"
+              >Lorem</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a
+              class="header__nav-link"
+              href="https://www.google.com"
+              target="_blank"
+              >Ipsum</a
+            >
+            <ul class="header__submenu-list">
+              <li class="header__submenu-item">
+                <a
+                  class="header__submenu-link"
+                  href="https://www.google.com"
+                  target="_blank"
+                  >Lorem</a
+                >
+              </li>
+              <li class="header__submenu-item">
+                <a
+                  class="header__submenu-link"
+                  href="https://www.google.com"
+                  target="_blank"
+                  >Ipsum</a
+                >
+              </li>
+              <li class="header__submenu-item">
+                <a
+                  class="header__submenu-link"
+                  href="https://www.google.com"
+                  target="_blank"
+                  >Dolor</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a
+              class="header__nav-link"
+              href="https://www.google.com"
+              target="_blank"
+              >Dolor</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="main-list__container">
+        <ul class="main__feature-list">
+          <li class="main__feature-item">Unlimited product updates</li>
+          <li class="main__feature-item">Unlimited product</li>
+          <li class="main__feature-item">Unlimited product</li>
+          <li class="main__feature-item main__feature-item--grey">
+            1GB Cloud storage
+          </li>
+          <li class="main__feature-item main__feature-item--grey">
+            Email and community support
+          </li>
+        </ul>
+      </div>
+      <div class="gallery">
+        <div class="gallery__container">
+          <h2 class="gallery__title">Face</h2>
+          <div class="gallery__items">
+            <div class="gallery__item">
+              <picture>
+                <source
+                  srcset="
+                    img/cleanser.jpg    1x,
+                    img/cleanser-2x.jpg 2x,
+                    img/cleanser-3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="gallery__image"
+                  src="img/cleanser.jpg"
+                  alt="A woman with a face mask covering her face"
+                />
+              </picture>
+              <p class="gallery__caption">Cleansers</p>
+              <span class="gallery__more">More</span>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source
+                  srcset="
+                    img/eye-patches.jpg    1x,
+                    img/eye-patches-2x.jpg 2x,
+                    img/eye-patches-3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="gallery__image"
+                  src="img/eye-patches.jpg"
+                  alt="A woman with striking red hair in a red striped shirt"
+                />
+              </picture>
+              <p class="gallery__caption">Eye Patches</p>
+              <span class="gallery__more">More</span>
+            </div>
+            <div class="gallery__item">
+              <picture>
+                <source
+                  srcset="
+                    img/mask.jpg    1x,
+                    img/mask-2x.jpg 2x,
+                    img/mask-3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="gallery__image"
+                  src="img/mask.jpg"
+                  alt="A woman wearing a face mask on her head"
+                />
+              </picture>
+              <p class="gallery__caption">Masks</p>
+              <span class="gallery__more">More</span>
+            </div>
+          </div>
+          <button class="gallery__button" type="button">More</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p>2021@infobao. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
