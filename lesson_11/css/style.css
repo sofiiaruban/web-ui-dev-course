@@ -1,0 +1,199 @@
+@import url('reset.css');
+body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.transform__block-wrapper {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid #000000;
+  background-color: rgb(224, 153, 153);
+}
+[class*='__container'] {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.header,
+.transform,
+.car,
+.footer {
+  margin-bottom: 60px;
+}
+.transform__title,
+.car__title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.transform__block {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(182, 11, 11);
+}
+
+.transform__block--translate:hover {
+  transform: translate(50px, 20px);
+}
+
+.transform__block--scale:hover {
+  transform: scale(1.5);
+}
+
+.transform__block--rotate:hover {
+  transform: rotate(45deg);
+}
+
+.transform__block--skew:hover {
+  transform: skew(20deg, 10deg);
+}
+
+.transform__block--matrix:hover {
+  transform: matrix(1, 0.3, 0.2, 1, 20, 10);
+}
+
+.transform__block--transform-origin:hover {
+  transform: rotate(45deg);
+}
+
+.transform__block--perspective {
+  perspective: 200px;
+}
+.transform__block--perspective:hover {
+  transform: rotateX(30deg);
+}
+
+.transform__block--translate3d:hover {
+  transform: translate3d(40px, 30px, 60px);
+}
+
+.transform__block--scale3d:hover {
+  transform: scale3d(1.2, 1.5, 2);
+}
+
+.transform__block--rotate3d:hover {
+  transform: rotate3d(1, 1, 0, 45deg);
+}
+
+.transform__block--translatez:hover {
+  transform: translateZ(80px);
+}
+
+.transform__block--transform-style {
+  transform-style: preserve-3d;
+}
+
+.car {
+  position: relative;
+  width: 520px;
+  height: 170px;
+  margin: 0 auto;
+}
+
+.car__body::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  height: 100%;
+  width: 8px;
+  transform: translateX(-50%);
+  background-color: #ff0000;
+  z-index: 2;
+}
+
+.car__top {
+  position: relative;
+  border-bottom: 110px solid #ff0000;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.car__top::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 100px solid rgb(96, 92, 178);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  height: 0;
+  width: 240px;
+}
+
+.car__bottom {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  width: 520px;
+  height: 0;
+  border-bottom: 110px solid red;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  transform: translateX(-50%);
+}
+
+.car__wheel {
+  position: absolute;
+  bottom: -100px;
+  width: 70px;
+  height: 70px;
+  background: #222;
+  border: 4px solid #555;
+  border-radius: 50%;
+}
+
+.car__wheel--left {
+  left: 40%;
+  transform: translateX(-100px);
+}
+.car__wheel--right {
+  left: 50%;
+  transform: translateX(100px);
+}
+.car__light {
+  position: absolute;
+  width: 45px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 4px;
+}
+
+.car__light--front {
+  top: 6px;
+  right: -5px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #fff, #ddd);
+  box-shadow: 0 0 20px 6px rgba(255, 255, 150, 0.7);
+}
+
+.car__light--back {
+  top: 6px;
+  left: -5px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #ff0000, #800000);
+  box-shadow: 0 0 20px 6px rgba(255, 0, 0, 0.6);
+}
+
+.car__bottom:hover .car__light--front {
+  box-shadow: 0 0 30px 12px rgba(255, 255, 150, 0.9);
+}
+
+.car__bottom:hover .car__light--back {
+  box-shadow: 0 0 30px 12px rgba(255, 0, 0, 0.9);
+}
