@@ -17,6 +17,7 @@ body {
   width: 520px;
   height: 180px;
   margin: 0 auto;
+  overflow-x: hidden;
   animation: drive 5s linear infinite;
 }
 
