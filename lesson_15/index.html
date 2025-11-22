@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Lesson 15</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <div class="header__menu-btn">
+        <img class="header__menu-icon" src="./img/menu.svg" alt="Menu">
+      </div>
+      <!--<img class="header__logo" src="./img/Logo.svg" alt="Logo">-->
+      <picture>
+        <source srcset="./img/logo-small.svg" media="(max-width: 565px)">
+        <img class="header__logo" src="./img/Logo.svg" alt="Logo">
+      </picture>
+
+      <div class="header__search">
+        <input type="search" placeholder="Search something">
+      </div>
+      <ul class="header__nav-list">
+        <li class="header__nav-group header__nav-group--main">
+          <ul class="header__sub-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="#">HOME</a></li>
+            <li class="header__nav-item header__nav-item--dropdown">SHOP</li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">BLOG</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">ABOUT US</a></li>
+          </ul>
+        </li>
+
+        <li class="header__nav-group header__nav-group--icons">
+          <ul class="header__sub-list">
+            <li class="header__nav-item header__nav-item--icon heart">
+              <a class="header__nav-link" href="#">
+                <img class="header__icon" src="./img/heart.svg" alt="heart">
+                <span class="header__icon-text">LOVE</span>
+              </a>
+            </li>
+            <li class="header__nav-item header__nav-item--icon">
+              <a class="header__nav-link" href="#">
+                <img class="header__icon" src="./img/shopping-cart.svg" alt="shopping cart">
+                <span class="header__icon-text">CART</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="hero__container">
+
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__title-line hero__title-line--small">WELCOME TO OUR</span>
+            <span class="hero__title-line hero__title-line--extralarge">FURNITURE</span>
+            <span class="hero__title-line hero__title-line--large">GALLERY</span>
+          </h1>
+
+
+          <hr class="hero__divider">
+
+          <h2 class="hero__subtitle">BROWSE OUR SELECTIONS</h2>
+
+          <p class="hero__text">
+            Featuring sleek designs and innovative materials that <br>
+            seamlessly blend form and function.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">Furnitur © Copyright 2020, Inc. All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

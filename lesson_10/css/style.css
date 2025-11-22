@@ -88,6 +88,7 @@ body {
   padding: 0 62px;
   width: 33%;
   color: #fff;
+  text-align: center;
 }
 
 .gallery__image {
@@ -97,11 +98,10 @@ body {
 
 .gallery__caption {
   font-size: 28px;
-  width: 150px;
+  padding: 0 10px;
   line-height: 1.32;
   position: absolute;
   text-align: center;
-  left: 30%;
   top: 40%;
 }
 
@@ -111,7 +111,6 @@ body {
   display: block;
   position: absolute;
   bottom: 12px;
-  left: 45%;
 }
 
 .gallery__more:hover {

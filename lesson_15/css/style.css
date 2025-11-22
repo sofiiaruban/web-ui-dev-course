@@ -1,0 +1,321 @@
+@import url("reset.css");
+
+body {
+		font-family: 'Lato','Arial', sans-serif; 
+		color: #2F302C;
+		line-height: 1.25;                                              
+}
+
+div[class*="__container"] {
+  max-width: 1392px;
+		width: 100%;
+  margin: 0 auto;
+}
+
+.header__container {
+	display: flex;
+	align-items: center; 
+	justify-content: space-between;
+	gap: 80px;
+	padding: 60px 0;
+	min-width: 0;
+}
+
+
+.header__nav-item {
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 12px 0;
+}
+.header__menu-btn {
+	display: none;
+	min-width: 42px;
+}
+.header__nav-list {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+.header__logo {
+	max-width: 200px;
+	width: 200px;
+	height: auto;
+	flex-shrink: 1;
+}
+.header__nav-group {
+	display: flex;
+	gap: 44px;
+}
+.header__sub-list {
+	display: flex;
+	gap: 44px;
+}
+.header__nav-link {
+	display: flex;
+	gap: 4px;
+}
+.header__search {
+	position: relative;
+	max-width: 264px;
+	min-width: 185px;
+	width: 100%;
+	display: inline-block;
+}
+
+.header__search input {
+	padding: 12px 0 12px 32px;
+	font-size: 16px;
+	border-bottom: 1px solid #D4D4D4;
+	width: 100%;
+}
+.header__search input::placeholder{
+	color: #7E7F7C;
+}
+
+.header__search::before {
+	content: url('../img/search.svg');
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.header__nav-item--dropdown {
+	position: relative;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.header__nav-item--dropdown::after {
+	content: url('../img/chevron-down.svg');
+	position: absolute;
+	right: 0;
+	top: 55%;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+.hero {
+	background: url(../img/hero.jpg) left center / cover no-repeat,	#d9d9d9;
+ max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	/*display: none;*/
+}
+
+.hero__container {
+	display: flex;
+	width: 100%;
+	justify-content:flex-end;
+	align-items: center;
+}
+
+.hero__content {
+	width: 50%;
+	text-align: left;
+	padding: 114px 0  110px 50px;
+}
+.hero__title {
+	max-width: 518px;
+}
+.hero__divider {
+		width: 100%;
+		height: 1px;
+		max-width: 308px;
+		margin-bottom: 36px;
+	 background-color: #2f302c;
+}
+.hero__title-line--small {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+.hero__title-line--extralarge, .hero__title-line--large {
+	font-family: Montserrat;
+	font-weight: 800;
+		font-size: clamp(2rem, 10vw, 6rem);
+	line-height: 1.04;
+}
+.hero__title-line--large {
+		font-weight: 700;
+}
+
+.hero__text {
+	color: #7E7F7C
+}
+.hero__subtitle {
+	margin-bottom: 20px;
+} 
+@media (max-width: 1432px) {
+	.header__container {
+		padding-inline: 40px;
+	}
+}
+
+@media (max-width: 1290px) {
+	.header__container {
+			gap: 70px;
+	}
+}
+
+
+@media (max-width: 1260px) {
+	.header__container {
+		gap: 60px;
+	}
+}
+
+@media (max-width: 1245px) {
+	.header__container {
+		gap: 50px;
+	}
+}
+
+@media (max-width: 1220px) {
+	.header__container {
+		gap: 44px;
+	}
+}
+
+@media (max-width: 1205px) {
+
+	.header__container,
+	.header__nav-group,
+	.header__sub-list {
+		gap: 35px;
+	}
+}
+
+@media (max-width: 1150px) {
+
+	.header__container,
+	.header__nav-group,
+	.header__sub-list {
+		gap: 30px;
+	}
+}
+
+@media (max-width: 1140px) {
+	.header__container {
+		padding: 40px 30px;
+		gap: 25px;
+	}
+}
+
+@media (max-width: 1085px) {
+	.header__container,
+		.header__sub-list {
+			gap: 80px;
+		}
+		.header__nav-group--icons {
+			flex: 1;
+		}
+		.header__nav-group--icons .header__sub-list {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	
+		.header__menu-btn {
+			display: block;
+		}
+	
+		.header__nav-group--main {
+			display: none;
+		}
+
+} 
+@media (max-width: 945px) {
+	.header__container  {
+			gap: 70px;
+		}
+}
+@media (max-width: 899px) {
+	 .header__icon-text {
+			display: none;
+	}
+		.header__nav-group--icons {
+			margin-left: auto;
+		}
+
+		.header__nav-item--icon img {
+			width: 30px;
+			max-width: 30px;
+		}
+		.header__nav-group--icons .header__sub-list  {
+			display: flex;
+			justify-content: flex-end;
+			gap: 30px;
+		}
+
+}
+
+@media (max-width: 800px) {
+	.header__container {
+		padding: 20px;
+		gap: 60px;
+		}
+}
+
+@media (max-width: 765px) {
+	.header__container {
+		gap: 50px;
+	}
+}
+@media (max-width: 725px) {
+	.header__container {
+		gap: 40px;
+	}
+}
+@media (max-width: 660px) {
+	.header__container {
+		gap: 30px;
+	}
+}
+
+@media (max-width: 650px) {
+	.header__logo {
+			max-width: 180px;
+		}
+}
+@media (max-width: 620px) {
+	.header__logo {
+			max-width: 170px;
+		}
+	.heart {
+		 display: none;
+	}
+}
+@media (max-width: 565px) {
+	.header__logo {
+		max-width: 36px;
+	}
+}
+@media (max-width: 425px) {
+	.header__container {
+			gap: 20px;
+		}
+}
+@media (max-width: 395px) {
+	.header__search  {
+				min-width: 160px;
+		}
+		.header__search input{
+			font-size: 14px;
+			max-width: 160px;
+		}
+}
+@media (max-width: 370px) {
+	.header__container {
+		gap: 15px;
+		padding: 15px;
+	}
+}
+@media (max-width: 340px) {
+	.header__container {
+		gap: 10px;
+		padding: 15px 10px;
+	}
+}

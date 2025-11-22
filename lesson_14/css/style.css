@@ -1,0 +1,126 @@
+@import url("reset.css");
+
+body {
+		font-family: 'Lato','Arial', sans-serif; 
+		color: #2F302C; 
+		line-height: 1.25;                                              
+}
+
+div[class*="__container"] {
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
+.register__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 82px;
+  margin-bottom: 36px;
+}
+
+.register__subtitle {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 82px;
+}
+
+.register__content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 82px 0;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.register__form-section,
+.register__discount-offer {
+  width: 50%;
+  max-width: 600px;
+}
+
+.register__form-title,
+.register__discount-title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.register__form-title {
+	margin-bottom: 36px;
+}
+.register__form-text span {
+  color: #7E7F7C;
+}
+
+.register__form-link {
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: #2F302C;
+}
+
+.register__form-text,
+.register__form-group {
+  margin-bottom: 72px;
+}
+
+.register__discount-title {
+	max-width: 185px;
+}
+.register__form-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+	margin-bottom: 40px;
+}
+
+.register__input {
+	flex: 1 1 50%;
+	padding: 12px 0;
+	border: none;
+	font-size: 16px;
+	border-bottom: 1px solid #D4D4D4;
+	box-sizing: border-box;
+}
+.register__input::placeholder {
+	color: #7E7F7C;
+}
+.register__input--phone {
+		width: 100%;
+		margin-bottom: 40px;
+}
+.register__form-group {
+	margin-bottom: 72px;
+}
+.register__submit {
+	padding: 12px;
+	color: #FFFFFF;
+	background-color: #2F302C;
+	width: calc(50% - 20px);
+	max-width: 336px;
+	font-size: 16px;
+}
+.register__discount-offer {
+	padding-left: 0;
+	display: flex;
+	row-gap: 28px;
+	flex-direction: column;
+	background-color: #F6F6F6;
+	padding: 228px 80px 60px;
+	background-image: url('../img/golden.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: contain;
+}
+ .register__discount-label {
+		max-width: 51px;
+		text-transform: uppercase;
+		background-color: #CE0000;
+		padding: 4px 8px;
+	 color: #ffffff;
+  border-radius: 4px;
+}

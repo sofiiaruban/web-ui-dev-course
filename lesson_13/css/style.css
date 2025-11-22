@@ -1,0 +1,123 @@
+@import url("reset.css");
+
+body {
+		font-family: 'Lato','Arial', sans-serif; 
+		color: #2F302C; 
+		line-height: 1.25;                                              
+}
+div[class*="-container"] {
+		max-width: 1392px;
+		margin: 0 auto;
+}
+.featured-products__title, .about-us__title {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.featured-products__title, .about-us__title {
+	padding-top: 82px;
+	margin-bottom: 36px;
+}
+.featured-products__categories {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: center; 
+  align-items: center;
+  gap: 48px; 
+  list-style: none;
+		font-weight: 700;
+		margin-bottom: 72px;
+  
+}
+
+.featured-products__category-link {
+  text-decoration: none;
+		text-transform: uppercase;
+		padding-bottom: 8px;
+}
+.active {
+	border-bottom: 1.7px solid #2F302C;
+}
+
+.featured-products__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 36px; 
+  row-gap: 72px; 
+}
+.featured-products__items, .about-us__items {
+		margin-bottom: 82px;  
+}
+
+.featured-products__item {
+  flex: 1 1 440px; 
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.featured-products__item-image {
+  width: 440px;
+  height: auto;
+  display: block;
+  margin: 0 auto 32px;
+}
+
+.featured-products__item-title {
+	 text-transform: uppercase;
+	 margin-bottom: 12px;
+}
+
+.featured-products__item-rating {
+	 display: flex;
+  flex-direction: row;
+  column-gap: 4px;
+  margin-bottom: 12px;
+  justify-content: center; 
+  align-items: center;  
+}
+.featured-products__star {
+	width: 16px;
+}
+.featured-products__rating-value {
+		font-size: 20px;
+		font-weight: 800;
+		line-height: 1.4
+}
+.about-us__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 106px;
+  padding-right: 106px;
+  row-gap: 68px;    
+  column-gap: 68px; 
+}
+
+.about-us__item {
+  flex: 1 1 348px; 
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.about-us__title {
+	 margin-bottom: 72px;
+}
+
+.about-us__item-image {
+	width: 60px;
+	margin-bottom: 24px;
+}
+
+.about-us__item-title {
+	 font-weight: 700;
+		text-transform: uppercase; 
+		margin-bottom: 24px;
+}
+
+.about-us__item-description {
+	color:  #7E7F7C;
+}
+

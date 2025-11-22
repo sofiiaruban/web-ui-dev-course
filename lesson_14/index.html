@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.cdnfonts.com/css/lato?styles=170779,17381,170788" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Lesson 14</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"></li>
+        <li class="header__nav-item"></li>
+        <li class="header__nav-item"></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="register">
+      <div class="register__container">
+        <h1 class="register__title">REGISTER TO FURNITUR</h1>
+        <h3 class="register__subtitle">GET MONTHLY VOUCHER WITH JUST ONE CLICK!</h3>
+        <div class="register__content-wrapper">
+          <div class="register__form-section">
+            <h2 class="register__form-title">YOUR INFORMATION</h2>
+            <p class="register__form-text">
+              <span>You already have an account?</span>
+              <a href="#" class="register__form-link">Sign in here</a>
+            </p>
+
+            <form action="POST" action="#" enctype="multipart/form-data" class="register__form">
+              <div class="register__form-group">
+                <input type="text" name="register__form[]" class="register__input register__input--name"
+                  placeholder="Your name">
+                <input type="email" name="register__form[]" class="register__input register__input--email"
+                  placeholder="Email">
+              </div>
+
+              <input type="tel" name="register__form[]" class="register__input register__input--phone"
+                placeholder="Phone number">
+
+              <div class="register__form-group">
+                <input type="password" name="register__form[]" class="register__input register__input--password"
+                  placeholder="Password">
+                <input type="password" name="register__form[]" class="register__input register__input--password-reset"
+                  placeholder="Reset Password">
+              </div>
+              <button type="submit" class="register__submit">Create an account</button>
+          </div>
+
+          <div class="register__discount-offer">
+            <span class="register__discount-label">HOT</span>
+            <h2 class="register__discount-title">DISCOUNT 25% FOR NEW MEMBER</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Furnitur © Copyright 2020, Inc. All rights reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
