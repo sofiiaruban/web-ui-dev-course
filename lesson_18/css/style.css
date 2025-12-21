@@ -27,7 +27,7 @@ div[class*='__container'] {
 }
 
 .header {
-  margin-bottom: clamp(60px, 6vw, 108px);
+  margin-bottom: clamp(60px, 5vw, 90px);
 }
 
 .header__container {
