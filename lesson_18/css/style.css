@@ -1,4 +1,4 @@
-@import url("reset.css");
+@import url('reset.css');
 
 body {
   font-family: 'Montserrat', 'Arial', sans-serif;
@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
 }
 
-div[class*="__container"] {
+div[class*='__container'] {
   max-width: 1250px;
   padding-left: 25px;
   padding-right: 25px;
@@ -21,7 +21,7 @@ div[class*="__container"] {
 .about-us__title {
   font-family: 'Lora', 'Arial', sans-serif;
   font-size: clamp(35px, 3vw, 50px);
-  color: #BA936F;
+  color: #ba936f;
   margin-bottom: clamp(20px, 4vw, 70px);
   text-transform: uppercase;
 }
@@ -61,11 +61,9 @@ div[class*="__container"] {
   border-radius: 16px;
   font-weight: 500;
   font-size: 17px;
-  background-color: #BA936F;
+  background-color: #ba936f;
   padding: 10px 50px;
-  transition:
-    background-color 0.2s ease,
-    transform 0.1s ease;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .header__button:hover,
@@ -123,7 +121,7 @@ div[class*="__container"] {
   flex: 0 0 46%;
 }
 
-p[class*="__description"],
+p[class*='__description'],
 .about-us__info {
   font-size: 19px;
 }
@@ -199,61 +197,50 @@ p[class*="__description"],
   }
 }
 
-.about-us__top, .about-us, .our-lessons, .schedule {
-  margin-bottom: clamp(60px, 8vw, 138px);
+.about-us__top,
+.about-us,
+.our-lessons,
+.schedule {
+  margin-bottom: clamp(60px, 8vw, 110px);
 }
 
-.about-us, .our-lessons, .schedule {
+.about-us,
+.our-lessons,
+.schedule {
   width: 100%;
 }
 
 .about-us {
-  background-image:
-    url('../img/bg-flower-right.png'),
+  background-image: url('../img/bg-flower-right.png'),
     url('../img/bg-flower-left.png');
-  background-position:
-    right top -10px,
-    left top 50%;
-  background-repeat:
-    no-repeat,
-    no-repeat;
-  background-size:
-    199px auto,
-    199px auto;
+  background-position: right top -10px, left top 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 199px auto, 199px auto;
 }
 
 .our-lessons {
-  background-image:
-    url('../img/bg-flower-right.png');
-  background-position:
-    right top -10px;
-  background-repeat:
-    no-repeat;
-  background-size:
-    199px auto;
+  background-image: url('../img/bg-flower-right.png');
+  background-position: right top -10px;
+  background-repeat: no-repeat;
+  background-size: 199px auto;
 }
 
 .schedule {
-  background-image:
-    url('../img/bg-flower-left.png');
-  background-position:
-    left top -150px;
-  background-repeat:
-    no-repeat;
-  background-size:
-    199px auto;
+  background-image: url('../img/bg-flower-left.png');
+  background-position: left top -150px;
+  background-repeat: no-repeat;
+  background-size: 199px auto;
 }
 
-
-h2[class*="title"] {
+h2[class*='title'] {
   font-family: 'Lora', 'Arial', sans-serif;
   font-size: 35px;
-  color: #BA936F;
+  color: #ba936f;
   margin-bottom: clamp(40px, 2vw, 55px);
   text-transform: uppercase;
 }
 
-img[class*="__img"] {
+img[class*='__img'] {
   border-radius: 33px;
 }
 
@@ -268,7 +255,7 @@ img[class*="__img"] {
 
 .about-us__promo-highlight {
   display: block;
-  color: #BA936F;
+  color: #ba936f;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -290,7 +277,7 @@ img[class*="__img"] {
   font-family: 'Lora', 'Arial', sans-serif;
   font-size: 22px;
   line-height: 1;
-  color: #BA936F;
+  color: #ba936f;
   padding-left: 9px;
 }
 
@@ -349,7 +336,7 @@ img[class*="__img"] {
 }
 
 .schedule__slide {
-  background-color: #FDEFE6FC;
+  background-color: #fdefe6fc;
   border-radius: 33px;
   padding: 25px 16px;
   display: flex;
@@ -407,20 +394,22 @@ img[class*="__img"] {
   display: none;
 }
 
-.schedule__day, .schedule__lesson, .schedule__time {
-  border-top: 1px solid #BA936F;
-  border-bottom: 1px solid #BA936F;
+.schedule__day,
+.schedule__lesson,
+.schedule__time {
+  border-top: 1px solid #ba936f;
+  border-bottom: 1px solid #ba936f;
   padding-block: 18px;
 }
 
 .schedule__lesson::after {
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
   width: 15px;
   height: 15px;
-  background-image: url("../img/icon/up-right-arrow.png");
+  background-image: url('../img/icon/up-right-arrow.png');
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
@@ -447,7 +436,7 @@ img[class*="__img"] {
   width: 30%;
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1500px) {
   .about-us,
   .our-lessons,
   .schedule {
@@ -456,7 +445,9 @@ img[class*="__img"] {
 }
 
 @media (max-width: 1150px) {
-  .schedule__table, .schedule__title, .schedule__description {
+  .schedule__table,
+  .schedule__title,
+  .schedule__description {
     display: none;
   }
 
@@ -464,7 +455,9 @@ img[class*="__img"] {
     display: block;
   }
 
-  .schedule__day, .schedule__lesson, .schedule__time {
+  .schedule__day,
+  .schedule__lesson,
+  .schedule__time {
     padding-top: 0;
   }
 
@@ -495,7 +488,7 @@ img[class*="__img"] {
     flex: 0 0 57%;
   }
 
-  h2[class*="title"] {
+  h2[class*='title'] {
     font-size: 30px;
   }
 }
@@ -528,7 +521,7 @@ img[class*="__img"] {
     position: absolute;
     right: 0;
     transition: all 0.3s;
-    background-color: #BA936F;
+    background-color: #ba936f;
     border-radius: 5px;
   }
 
@@ -583,7 +576,7 @@ img[class*="__img"] {
   }
 
   .header__nav-item:hover {
-    border-bottom: 2px solid #BA936F;
+    border-bottom: 2px solid #ba936f;
     cursor: pointer;
   }
 
@@ -612,7 +605,7 @@ img[class*="__img"] {
     left: 0;
   }
 
-  h2[class*="title"] {
+  h2[class*='title'] {
     font-size: 25px;
     margin-bottom: 20px;
   }
@@ -631,7 +624,6 @@ img[class*="__img"] {
 
   .about-us__promo {
     margin-bottom: 17px;
-
   }
 }
 
@@ -664,7 +656,6 @@ img[class*="__img"] {
 
   .about-us__description {
     display: none;
-
   }
 
   .about-us__link-wrapper {
@@ -712,7 +703,7 @@ img[class*="__img"] {
     margin-bottom: 27px;
   }
 
-  h2[class*="title"] {
+  h2[class*='title'] {
     font-size: 35px;
     margin-bottom: 49px;
   }
@@ -732,7 +723,8 @@ img[class*="__img"] {
   }
 
   .schedule__wrapper,
-  .schedule__image, .schedule__img {
+  .schedule__image,
+  .schedule__img {
     flex: 0 0 100%;
     width: 100%;
   }
