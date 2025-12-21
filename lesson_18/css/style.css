@@ -1,0 +1,783 @@
+@import url("reset.css");
+
+body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  color: #343434;
+  line-height: 1.25;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+div[class*="__container"] {
+  max-width: 1250px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+}
+
+.about-us__title {
+  font-family: 'Lora', 'Arial', sans-serif;
+  font-size: clamp(35px, 3vw, 50px);
+  color: #BA936F;
+  margin-bottom: clamp(20px, 4vw, 70px);
+  text-transform: uppercase;
+}
+
+.header {
+  margin-bottom: clamp(60px, 6vw, 108px);
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 30px 0 0;
+}
+
+.header__logo {
+  max-width: 124px;
+  width: 100%;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(20px, 5vw, 60px);
+}
+
+.header__nav-item {
+  text-transform: capitalize;
+}
+
+.header__button,
+.about-us__button {
+  color: #fff;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 17px;
+  background-color: #BA936F;
+  padding: 10px 50px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.header__button:hover,
+.about-us__button:hover {
+  background-color: rgba(186, 147, 111, 0.8);
+}
+
+.header__button:active,
+.about-us__button:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 6px rgba(186, 147, 111, 0.25);
+}
+
+.icon-menu {
+  display: none;
+}
+
+.about-us__image-mob {
+  display: none;
+}
+
+.about-us__top,
+.about-us__bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.about-us__top {
+  column-gap: 3%;
+}
+
+.about-us__bottom {
+  column-gap: 4%;
+}
+
+.about-us__top .about-us__text-content {
+  flex: 0 0 57%;
+}
+
+.about-us__text-content,
+.about-us__bottom-text {
+  margin: auto 0;
+}
+
+.about-us__top .about-us__image {
+  flex: 0 0 40%;
+}
+
+.about-us__bottom .about-us__sub-image {
+  flex: 0 0 50%;
+}
+
+.about-us__bottom .about-us__bottom-text {
+  flex: 0 0 46%;
+}
+
+p[class*="__description"],
+.about-us__info {
+  font-size: 19px;
+}
+
+.about-us__description {
+  margin-bottom: clamp(16px, 3vw, 32px);
+}
+
+.about-us__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 17px;
+  transition: transform 0.3s ease;
+}
+
+.about-us__link span {
+  position: relative;
+  left: -34px;
+  z-index: 1;
+}
+
+.about-us__link::before {
+  content: url('../img/icon/circle.svg');
+  display: inline-block;
+  width: clamp(80px, 100%, 100%);
+  max-width: 100px;
+  z-index: 0;
+
+  animation: pulse 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.about-us__link::after {
+  content: url('../img/icon/right-arrow.png');
+  display: inline-block;
+  margin-left: -26px;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+
+  animation: arrow-move 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(6px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.about-us__top, .about-us, .our-lessons, .schedule {
+  margin-bottom: clamp(60px, 8vw, 138px);
+}
+
+.about-us, .our-lessons, .schedule {
+  width: 100%;
+}
+
+.about-us {
+  background-image:
+    url('../img/bg-flower-right.png'),
+    url('../img/bg-flower-left.png');
+  background-position:
+    right top -10px,
+    left top 50%;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-size:
+    199px auto,
+    199px auto;
+}
+
+.our-lessons {
+  background-image:
+    url('../img/bg-flower-right.png');
+  background-position:
+    right top -10px;
+  background-repeat:
+    no-repeat;
+  background-size:
+    199px auto;
+}
+
+.schedule {
+  background-image:
+    url('../img/bg-flower-left.png');
+  background-position:
+    left top -150px;
+  background-repeat:
+    no-repeat;
+  background-size:
+    199px auto;
+}
+
+
+h2[class*="title"] {
+  font-family: 'Lora', 'Arial', sans-serif;
+  font-size: 35px;
+  color: #BA936F;
+  margin-bottom: clamp(40px, 2vw, 55px);
+  text-transform: uppercase;
+}
+
+img[class*="__img"] {
+  border-radius: 33px;
+}
+
+.about-us__info {
+  margin-bottom: clamp(39px, 2vw, 46px);
+}
+
+.about-us__promo {
+  font-size: 16px;
+  margin-bottom: clamp(27px, 2vw, 43px);
+}
+
+.about-us__promo-highlight {
+  display: block;
+  color: #BA936F;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.our-lessons__title {
+  margin-bottom: 32px;
+}
+
+.our-lessons__description,
+.schedule__description {
+  max-width: 839px;
+}
+
+.our-lessons__description {
+  margin-bottom: 64px;
+}
+
+.our-lessons__type-title {
+  font-family: 'Lora', 'Arial', sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  color: #BA936F;
+  padding-left: 9px;
+}
+
+.our-lessons__types {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.our-lessons__type {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.schedule__title {
+  margin-bottom: 16px;
+}
+
+.schedule__description {
+  margin-bottom: 41px;
+}
+
+.schedule__details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 3%;
+  width: 100%;
+}
+
+.schedule__wrapper {
+  flex: 0 0 55%;
+  margin: auto 0;
+}
+
+.schedule__table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.schedule__slider {
+  display: none;
+  width: 100%;
+  margin: auto 0;
+}
+
+.schedule__slide-wrapper {
+  display: none;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+.schedule__slide {
+  background-color: #FDEFE6FC;
+  border-radius: 33px;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(20px, 4vw, 60px);
+  width: 100%;
+}
+
+.schedule__arrow {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.schedule__arrow img {
+  width: 25px;
+  flex-shrink: 0;
+}
+
+.schedule__slide .schedule__lesson {
+  margin-top: auto;
+}
+
+.schedule__top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule__image {
+  flex: 0 0 42%;
+}
+
+.schedule__slide-wrapper.active {
+  display: flex;
+}
+
+.schedule__slide :is(.schedule__day, .schedule__lesson, .schedule__time) {
+  border: none;
+  text-transform: uppercase;
+}
+
+.schedule__slide :is(.schedule__time) {
+  min-width: 150px;
+  width: 100%;
+}
+
+.schedule__slide :is(.schedule__lesson) {
+  font-size: 25px;
+  min-width: 263px;
+  width: 100%;
+  line-height: 1.08;
+  padding: 0;
+}
+
+.schedule__wrapper :is(.schedule__title, .schedule__description) {
+  display: none;
+}
+
+.schedule__day, .schedule__lesson, .schedule__time {
+  border-top: 1px solid #BA936F;
+  border-bottom: 1px solid #BA936F;
+  padding-block: 18px;
+}
+
+.schedule__lesson::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon/up-right-arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -7px;
+}
+
+.schedule__lesson:hover::after {
+  transform: translateY(-3px);
+}
+
+.schedule__time {
+  text-align: right;
+}
+
+.schedule__day {
+  width: 25%;
+}
+
+.schedule__lesson {
+  width: 45%;
+}
+
+.schedule__time {
+  width: 30%;
+}
+
+@media (max-width: 1540px) {
+  .about-us,
+  .our-lessons,
+  .schedule {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .schedule__table, .schedule__title, .schedule__description {
+    display: none;
+  }
+
+  .schedule__slider {
+    display: block;
+  }
+
+  .schedule__day, .schedule__lesson, .schedule__time {
+    padding-top: 0;
+  }
+
+  .schedule__wrapper :is(.schedule__title, .schedule__description) {
+    display: block;
+  }
+
+  .schedule__wrapper {
+    margin: auto 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .about-us__info,
+  .about-us__promo {
+    font-size: 16px;
+  }
+
+  .about-us__bottom {
+    column-gap: 3%;
+  }
+
+  .about-us__bottom .about-us__sub-image {
+    flex: 0 0 40%;
+  }
+
+  .about-us__bottom .about-us__bottom-text {
+    flex: 0 0 57%;
+  }
+
+  h2[class*="title"] {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 985px) {
+  .header__button {
+    display: none;
+  }
+
+  .icon-menu,
+  .header__logo {
+    position: relative;
+    z-index: 3;
+  }
+
+  .icon-menu {
+    display: block;
+    width: 35px;
+    height: 27px;
+    flex-shrink: 0;
+    background-color: transparent;
+  }
+
+  .icon-menu span,
+  .icon-menu::before,
+  .icon-menu::after {
+    content: '';
+    height: 4px;
+    width: 35px;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s;
+    background-color: #BA936F;
+    border-radius: 5px;
+  }
+
+  .icon-menu::before {
+    top: 0;
+  }
+
+  .icon-menu::after {
+    bottom: 0;
+  }
+
+  .icon-menu span {
+    top: 50%;
+    translate: 0 -50%;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    z-index: 2;
+    overflow: auto;
+    transition: left 0.3s;
+    padding: 120px 15px 30px 15px;
+  }
+
+  .menu::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 100%;
+    transition: left 0.3s;
+    background-color: #fff;
+    z-index: 2;
+  }
+
+  .header__nav-list {
+    row-gap: 30px;
+    flex-direction: column;
+  }
+
+  .header__nav-item {
+    font-size: 28px;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 5px;
+  }
+
+  .header__nav-item:hover {
+    border-bottom: 2px solid #BA936F;
+    cursor: pointer;
+  }
+
+  [data-menu-open] body {
+    overflow: hidden;
+  }
+
+  [data-menu-open] .icon-menu span {
+    width: 0;
+  }
+
+  [data-menu-open] .icon-menu::before {
+    rotate: -45deg;
+    translate: 0 -50%;
+    top: 50%;
+  }
+
+  [data-menu-open] .icon-menu::after {
+    rotate: 45deg;
+    translate: 0 50%;
+    bottom: 50%;
+  }
+
+  [data-menu-open] .menu,
+  [data-menu-open] .menu::before {
+    left: 0;
+  }
+
+  h2[class*="title"] {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .about-us__promo,
+  .about-us__info,
+  .schedule__wrapper :is(.schedule__description) {
+    font-size: 16px;
+  }
+
+  .about-us__info,
+  .our-lessons__description,
+  .schedule__wrapper :is(.schedule__description) {
+    margin-bottom: 20px;
+  }
+
+  .about-us__promo {
+    margin-bottom: 17px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us__image {
+    display: none;
+  }
+
+  .about-us__image-mob {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 55px;
+  }
+
+  .about-us__img-mob {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .about-us__top .about-us__text-content {
+    flex: 0 0 100%;
+  }
+
+  .about-us__title {
+    position: absolute;
+    padding-inline-end: 15px;
+    z-index: 1;
+  }
+
+  .about-us__description {
+    display: none;
+
+  }
+
+  .about-us__link-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .about-us__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3%;
+    row-gap: 28px;
+  }
+
+  .about-us__bottom .about-us__sub-image,
+  .about-us__bottom .about-us__bottom-text {
+    flex: 0 0 100%;
+  }
+
+  .about-us__bottom .about-us__bottom-text {
+    order: 1;
+  }
+
+  .about-us__bottom .about-us__sub-image {
+    order: 2;
+  }
+
+  .about-us__img {
+    width: 100%;
+  }
+
+  .about-us__promo,
+  .about-us__info,
+  .schedule__description {
+    font-size: 18px;
+  }
+
+  .about-us__info,
+  .schedule__description {
+    margin-bottom: 39px;
+  }
+
+  .about-us__promo {
+    margin-bottom: 27px;
+  }
+
+  h2[class*="title"] {
+    font-size: 35px;
+    margin-bottom: 49px;
+  }
+
+  .schedule__wrapper :is(.schedule__title, .schedule__description) {
+    display: none;
+  }
+
+  .schedule__title,
+  .schedule__description {
+    display: block;
+  }
+
+  .schedule__details {
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+
+  .schedule__wrapper,
+  .schedule__image, .schedule__img {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .schedule__image {
+    order: -1;
+  }
+
+  .schedule__slide-wrapper {
+    position: relative;
+    gap: 0;
+  }
+
+  .schedule__arrow-left,
+  .schedule__arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+
+  .schedule__arrow-left {
+    left: -25px;
+  }
+
+  .schedule__arrow-right {
+    right: -25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .our-lessons__types {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .our-lessons__type {
+    flex: 0 0 100%;
+  }
+
+  .our-lessons__img {
+    width: 100%;
+  }
+
+  .our-lessons__description {
+    margin-bottom: 39px;
+  }
+}

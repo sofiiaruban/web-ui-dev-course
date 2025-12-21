@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Lesson 18</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <img src="./img/icon/logo.svg" alt="Logo" class="header__logo">
+      <nav class="header__nav menu">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#about-us">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#about-us-bottom">Teachers</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#our-lessons">Types Of Yoga</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#schedule">Timetable</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header__button">Sign Up</button>
+      <button class="icon-menu" aria-label="Open menu"><span></span></button>
+    </div>
+  </header>
+  <main class="main">
+    <section id="about-us" class="about-us">
+      <div class="about-us__container">
+        <div class="about-us__top">
+          <div class="about-us__text-content">
+            <h1 class="about-us__title">"Uniting the Body, Mind, and Spirit Through the Practice of Yoga"</h1>
+            <picture class="about-us__image-mob">
+              <source
+                srcset="img/pigeon-pose-mob.avif 1x, img/pigeon-pose-mob-2x.avif 2x, img/pigeon-pose-mob-3x.avif 3x"
+                type="image/avif" />
+              <img src="img/pigeon-pose-mob.png" alt="a woman performing the pigeon pose." class="about-us__img-mob">
+            </picture>
+            <p class="about-us__description">
+              Yoga is a multifaceted discipline that encompasses physical, mental, and spiritual aspects. It is based on
+              the concept
+              of the interconnectedness of body, mind, and spirit, and aims to promote balance and harmony within
+              oneself and with the
+              world around us.
+            </p>
+            <div class="about-us__link-wrapper">
+              <a href="#" class="about-us__link">
+                <span>Read More</span>
+              </a>
+            </div>
+          </div>
+          <picture class="about-us__image">
+            <source srcset="img/pigeon-pose.avif 1x, img/pigeon-pose-2x.avif 2x, img/pigeon-pose-3x.avif 3x"
+              type="image/avif" />
+            <img src="img/pigeon-pose.png" alt="a woman performing the pigeon pose." class="about-us__img">
+          </picture>
+        </div>
+        <div id="about-us-bottom" class="about-us__bottom">
+          <picture class="about-us__sub-image">
+            <source srcset="img/lotus-pose.avif 1x, img/lotus-pose-2x.avif 2x, img/lotus-pose-3x.avif 3x"
+              type="image/avif" />
+            <img src="img/lotus-pose.png" alt="a woman performing the lotus pose." class="about-us__img">
+          </picture>
+          <div class="about-us__bottom-text">
+            <h2 class="about-us__subtitle">Practice Anytime, Anywhere with our Online Classes</h2>
+            <p class="about-us__info">
+              Online yoga classes can range from pre-recorded sessions to live-streamed classes with a teacher, and
+              can offer a
+              variety of styles and levels to suit individual preferences and needs. With online yoga, practitioners
+              can have the
+              flexibility to create their own personalized practice and fit it into their lifestyle.
+            </p>
+            <p class="about-us__promo">
+              Are you worried about whether this form will suit you?
+              <span class="about-us__promo-highlight">First lesson - free!</span>
+            </p>
+            <button type="button" class="about-us__button">Trial Lesson</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="our-lessons" class="our-lessons">
+      <div class="our-lessons__container">
+        <h2 class="our-lessons__title">Our lessons</h2>
+        <p class="our-lessons__description">
+          Yoga lessons typically involve physical postures, breathing exercises, and meditation to promote physical
+          strength,
+          flexibility, reduce stress, and enhance well-being. Classes can vary in style and intensity, and it's
+          essential to
+          consult with a qualified yoga teacher before starting any practice.
+        </p>
+        <div class="our-lessons__types">
+          <article class="our-lessons__type">
+            <picture class="our-lessons__image">
+              <source
+                srcset="img/yoga-for-beginner.avif 1x, img/yoga-for-beginner-2x.avif 2x, img/yoga-for-beginner-3x.avif 3x"
+                type="image/avif" />
+              <img src="img/yoga-for-beginner.png" alt="a woman demonstrating a yoga pose" class="our-lessons__img">
+            </picture>
+            <h3 class="our-lessons__type-title">Yoga For Beginner</h3>
+          </article>
+          <article class="our-lessons__type">
+            <picture class="our-lessons__image">
+              <source
+                srcset="img/regular-practice.avif 1x, img/regular-practice-2x.avif 2x, img/regular-practice-3x.avif 3x"
+                type="image/avif" />
+              <img src="img/regular-practice.png" alt="a woman demonstrating a yoga pose" class="our-lessons__img">
+            </picture>
+            <h3 class="our-lessons__type-title">Regular Practice</h3>
+          </article>
+          <article class="our-lessons__type">
+            <picture class="our-lessons__image">
+              <source
+                srcset="img/individual-practice.avif 1x, img/individual-practice-2x.avif 2x, img/individual-practice-3x.avif 3x"
+                type="image/avif" />
+              <img src="img/individual-practice.png" alt="a woman demonstrating a yoga pose" class="our-lessons__img">
+            </picture>
+            <h3 class="our-lessons__type-title">Individual Practice</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="schedule" class="schedule">
+      <div class="schedule__container">
+        <h2 class="schedule__title">Join our class, see our schedule</h2>
+        <p class="schedule__description">
+          Start your day energized with our early morning classes or relax and unwind during our evening sessions.
+          Join our skilled instructors in our spacious studio and deepen your yoga practice while connecting with a
+          community of like-minded individuals.
+        </p>
+        <div class="schedule__details">
+          <div class="schedule__wrapper">
+            <h2 class="schedule__title">Join our class, see our schedule</h2>
+            <p class="schedule__description">
+              Start your day energized with our early morning classes or relax and unwind during our evening sessions.
+              Join our skilled instructors in our spacious studio and deepen your yoga practice while connecting with
+              a
+              community of like-minded individuals.
+            </p>
+            <table class="schedule__table">
+              <tr class="schedule__row">
+                <td class="schedule__day">Mondays</td>
+                <td class="schedule__lesson">
+                  <a href="#">Hot Power Flow</a>
+                </td>
+                <td class="schedule__time">7:30 PM - 8:45 PM</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__day">Tuesday</td>
+                <td class="schedule__lesson">
+                  <a href="#">Hot PowerFlow Vinyasa</a>
+                </td>
+                <td class="schedule__time">8:20 AM - 9:20 AM</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__day">Wednesday</td>
+                <td class="schedule__lesson">
+                  <a href="#">Warm Mindful Flow</a>
+                </td>
+                <td class="schedule__time">4:15 PM - 5:45 PM</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__day">Thursday</td>
+                <td class="schedule__lesson">
+                  <a href="#">Kundalini Yoga</a>
+                </td>
+                <td class="schedule__time">3:30 PM - 4:45 PM</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__day">Friday</td>
+                <td class="schedule__lesson">
+                  <a href="#">Warm Yin Yoga</a>
+                </td>
+                <td class="schedule__time">2:00 PM - 3:15 PM</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__day">Saturday</td>
+                <td class="schedule__lesson">
+                  <a href="#">JZT Dance and Yoga</a>
+                </td>
+                <td class="schedule__time">10:00 AM - 11:45 AM</td>
+              </tr>
+              <tr class="schedule__row">
+                <td class="schedule__day">Sunday</td>
+                <td class="schedule__lesson">
+                  <a href="#">Hatha Yoga</a>
+                </td>
+                <td class="schedule__time">6:30 PM - 7:30 PM</td>
+              </tr>
+            </table>
+            <div class="schedule__slider" aria-label="Weekly Yoga Schedule Slider">
+              <article class="schedule__slide-wrapper active">
+                <button class="schedule__arrow schedule__arrow-left">
+                  <img src="img/icon/slider-arrow-left.png" alt="Previous slide">
+                </button>
+                <div class="schedule__slide">
+                  <header class="schedule__top-row">
+                    <p class="schedule__day">Monday</p>
+                    <time class="schedule__time">7:30 PM - 8:45 PM</time>
+                  </header>
+                  <h3 class="schedule__lesson">
+                    <a href="#">Hot Power Flow</a>
+                  </h3>
+                </div>
+                <button class="schedule__arrow schedule__arrow-right">
+                  <img src="img/icon/slider-right-arrow.png" alt="Next slide">
+                </button>
+              </article>
+              <article class="schedule__slide-wrapper">
+                <button class="schedule__arrow schedule__arrow-left">
+                  <img src="img/icon/slider-arrow-left.png" alt="Previous slide">
+                </button>
+                <div class="schedule__slide">
+                  <header class="schedule__top-row">
+                    <p class="schedule__day">Tuesday</p>
+                    <time class="schedule__time">8:20 AM - 9:20 AM</time>
+                  </header>
+                  <h3 class="schedule__lesson">
+                    <a href="#">Hot PowerFlow Vinyasa</a>
+                  </h3>
+                </div>
+                <button class="schedule__arrow schedule__arrow-right">
+                  <img src="img/icon/slider-right-arrow.png" alt="Next slide">
+                </button>
+              </article>
+              <article class="schedule__slide-wrapper">
+                <button class="schedule__arrow schedule__arrow-left">
+                  <img src="img/icon/slider-arrow-left.png" alt="Previous slide">
+                </button>
+                <div class="schedule__slide">
+                  <header class="schedule__top-row">
+                    <p class="schedule__day">Wednesday</p>
+                    <time class="schedule__time">4:15 PM - 5:45 PM</time>
+                  </header>
+                  <h3 class="schedule__lesson">
+                    <a href="#">Warm Mindful Flow</a>
+                  </h3>
+                </div>
+                <button class="schedule__arrow schedule__arrow-right">
+                  <img src="img/icon/slider-right-arrow.png" alt="Next slide">
+                </button>
+              </article>
+              <article class="schedule__slide-wrapper">
+                <button class="schedule__arrow schedule__arrow-left">
+                  <img src="img/icon/slider-arrow-left.png" alt="Previous slide">
+                </button>
+                <div class="schedule__slide">
+                  <header class="schedule__top-row">
+                    <p class="schedule__day">Thursday</p>
+                    <time class="schedule__time">3:30 PM - 4:45 PM</time>
+                  </header>
+                  <h3 class="schedule__lesson">
+                    <a href="#">Kundalini Yoga</a>
+                  </h3>
+                </div>
+                <button class="schedule__arrow schedule__arrow-right">
+                  <img src="img/icon/slider-right-arrow.png" alt="Next slide">
+                </button>
+              </article>
+              <article class="schedule__slide-wrapper">
+                <button class="schedule__arrow schedule__arrow-left">
+                  <img src="img/icon/slider-arrow-left.png" alt="Previous slide">
+                </button>
+                <div class="schedule__slide">
+                  <header class="schedule__top-row">
+                    <p class="schedule__day">Friday</p>
+                    <time class="schedule__time">2:00 PM - 3:15 PM</time>
+                  </header>
+                  <h3 class="schedule__lesson">
+                    <a href="#">Warm Yin Yoga</a>
+                  </h3>
+                </div>
+                <button class="schedule__arrow schedule__arrow-right">
+                  <img src="img/icon/slider-right-arrow.png" alt="Next slide">
+                </button>
+              </article>
+              <article class="schedule__slide-wrapper">
+                <button class="schedule__arrow schedule__arrow-left">
+                  <img src="img/icon/slider-arrow-left.png" alt="Previous slide">
+                </button>
+                <div class="schedule__slide">
+                  <header class="schedule__top-row">
+                    <p class="schedule__day">Saturday</p>
+                    <time class="schedule__time">10:00 AM - 11:45 AM</time>
+                  </header>
+                  <h3 class="schedule__lesson">
+                    <a href="#">JZT Dance and Yoga</a>
+                  </h3>
+                </div>
+                <button class="schedule__arrow schedule__arrow-right">
+                  <img src="img/icon/slider-right-arrow.png" alt="Next slide">
+                </button>
+              </article>
+              <article class="schedule__slide-wrapper">
+                <button class="schedule__arrow schedule__arrow-left">
+                  <img src="img/icon/slider-arrow-left.png" alt="Previous slide">
+                </button>
+                <div class="schedule__slide">
+                  <header class="schedule__top-row">
+                    <p class="schedule__day">Sunday</p>
+                    <time class="schedule__time">6:30 PM - 7:30 PM</time>
+                  </header>
+                  <h3 class="schedule__lesson">
+                    <a href="#">Hatha Yoga</a>
+                  </h3>
+                </div>
+                <button class="schedule__arrow schedule__arrow-right">
+                  <img src="img/icon/slider-right-arrow.png" alt="Next slide">
+                </button>
+              </article>
+            </div>
+          </div>
+          <picture class="schedule__image">
+            <source srcset="img/three-women.avif 1x, img/three-women-2x.avif 2x, img/three-women-3x.avif 3x"
+              type="image/avif" />
+            <img src="img/three-women.png" alt="three women demonstrating yoga pose" class="schedule__img">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text"></p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
