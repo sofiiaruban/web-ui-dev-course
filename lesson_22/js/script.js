@@ -24,16 +24,31 @@ if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20") {
 
 
 //Task 4 
-function divide(a = 0, b = 1) {
-  const resultText = 'Division result: ';
+const RESULT_TEXT = 'Division result: ';
 
-  if (typeof a !== 'number' || typeof b !== 'number' || b === 0) {
-    return resultText + 0;
+function isValidNumber(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    return false;
   }
 
-  return resultText + (a / b);
+  if (!Number.isFinite(a) || !Number.isFinite(b)) {
+    return false;
+  }
+
+  if (b === 0) {
+    return false;
+  }
+
+  return true;
 }
 
+function divide(a = 0, b = 1) {
+  if (!isValidNumber(a, b)) {
+    return `${RESULT_TEXT}0`;
+  }
+
+  return `${RESULT_TEXT}${a / b}`;
+}
 
 console.log(divide());
 console.log(divide(10, 2));  
